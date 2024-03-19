@@ -2,7 +2,7 @@
 const shimmer =
   'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
 
-export async function CardSkeleton() {
+export function CardSkeleton() {
   return (
     <div
       className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}
@@ -18,7 +18,7 @@ export async function CardSkeleton() {
   );
 }
 
-export async function CardsSkeleton() {
+export function CardsSkeleton() {
   return (
     <>
       <CardSkeleton />
@@ -59,7 +59,7 @@ export function InvoiceSkeleton() {
   );
 }
 
-export async function LatestInvoicesSkeleton() {
+export function LatestInvoicesSkeleton() {
   return (
     <div
       className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}
@@ -82,7 +82,7 @@ export async function LatestInvoicesSkeleton() {
   );
 }
 
-export default async function DashboardSkeleton() {
+export default function DashboardSkeleton() {
   return (
     <>
       <div
