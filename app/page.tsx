@@ -44,7 +44,6 @@ export default function Page() {
             alt='Screenshot of the dasboard project showing mobile version'
           />
         </div>
-        <a href='/dashboard'>Dashboard</a>
       </div>
     </main>
   );
